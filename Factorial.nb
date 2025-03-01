@@ -1,0 +1,62 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[DynamicModuleBox[{Set[Typeset`querydata$$,
+Association["query" -> "FactorialWL[n_] := If[n == 0, 1, n * FactorialWL[n - 1]]",
+"assumptions" -> {},"parse" -> Defer[Equal[Factorial[Pattern[n,Blank[]]],If[Equal[
+n,0],1,Times[n,Factorial[Plus[n,-1]]]]]],"inputpredictions" -> {},"otherpredictions" -> {"FullResults"},
+"allassumptions" -> {XMLElement["assumptions",{"count" -> "1"},{XMLElement["assumption",
+{"type" -> "Clash","word" -> "FactorialWL","template" -> "Assuming \"FactorialWL\" is a math function${separator}Use as ${desc} instead","count" -> "2","pulldown" -> "false","default" -> "{\"C\", \"FactorialWL\"} -> {\"Function\", \"dflt\"}"},
+{XMLElement["value",{"name" -> "Function","desc" -> "a math function","input" -> "{\"C\", \"FactorialWL\"} -> {\"Function\"}"},
+{}],XMLElement["value",{"name" -> "LetterSequence","desc" -> "referring to textual strings","input" -> "{\"C\", \"FactorialWL\"} -> {\"LetterSequence\"}"},
+{}]}]}]},"summarizeassumptions" -> FrontEnd`SuppressEvaluationHash[Automatic],"summarizepredictions" -> FrontEnd`SuppressEvaluationHash[
+True]]],Set[Typeset`update$$,FrontEnd`SuppressEvaluationHash[1]]},DynamicBox[ToBoxes[
+AlphaIntegration`NaturalLanguageInputBoxes[1,Typeset`querydata$$,Typeset`update$$],
+StandardForm],TrackedSymbols -> {}],RuleDelayed[DynamicModuleValues,{}],BaseStyle -> {Deployed -> True},
+ExpressionUUID -> "ee483b4c-5cc8-4e99-bed5-2b380054f4c5"]],"DeployedNLInput",PrivateCellOptions -> {"CellSettings" -> {"HideDetails" -> FrontEnd`SuppressEvaluationHash[
+False]}},ExpressionUUID -> "2cf28e13-b858-44f3-9fd6-a3931d11a5df"],Cell[
+BoxData[
+RowBox[{RowBox[{RowBox[{"(","n_",")"}],"!"}]," ","=="," ",RowBox[{"If","[",RowBox[
+{RowBox[{"n"," ","=="," ","0"}],","," ","1",","," ",RowBox[{"n","*",RowBox[{RowBox[
+{"(",RowBox[{"n"," ","-"," ","1"}],")"}],"!"}]}]}],"]"}]}]],"DeployedWLInput",CellAutoOverwrite -> True,
+GeneratedCell -> True,CellLabel -> "In[1]:=",PrivateCellOptions -> {"CellSettings" -> {"UsageTags" -> {{"Equal",1},{"Factorial",1},{"Pattern",1},{"Blank",1},{"If",1}}}},
+ExpressionUUID -> "b530f829-f2ee-46fe-a415-c00620650eb9"],Cell[
+BoxData[FormBox[RowBox[
+{RowBox[{"n_","!"}],"\[LongEqual]",RowBox[{"If","[",RowBox[{RowBox[{"n","\[LongEqual]","0"}],",","1",",",RowBox[
+{"n"," ",RowBox[{RowBox[{"(",RowBox[{"n","-","1"}],")"}],"!"}]}]}],"]"}]}],TraditionalForm],
+TraditionalForm],"Output",CellLabel -> "Out[1]= ",ExpressionUUID -> "b4e33ea1-18fd-401f-842c-495e88bd0d81"]},
+Open],ExpressionUUID -> "394fadd1-4f0e-4c7a-a4bd-76cfe8298728"],Cell[
+CellGroupData[
+{Cell[
+BoxData[DynamicModuleBox[{Set[Typeset`querydata$$,Association["query" -> "FactorialWL[5]",
+"assumptions" -> {},"parse" -> Defer[Factorial[5]],"inputpredictions" -> {{"InputNumber$FactorialLikeOperations",Predictions`Prediction[
+0.5`,"combinatoric math","",{{"double factorial",Function[HoldComplete[Factorial2[
+5]]]},{"subfactorial",Function[HoldComplete[Subfactorial[5]]]},{"hyperfactorial",Function[
+HoldComplete[Hyperfactorial[5]]]},{"Euler gamma",Function[HoldComplete[Gamma[5]]]},{"digamma",Function[
+HoldComplete[PolyGamma[5]]]},{Row[{Pane[Style[HoldForm[5],LineBreakWithin -> False],
+ImageSize -> {150},BaselinePosition -> Baseline],Pane[Style[HoldForm["th"],LineBreakWithin -> False],
+ImageSize -> {150},BaselinePosition -> Baseline]," Fibonacci number"}],Function[HoldComplete[
+Fibonacci[5]]]}}],Predictions`InInput},{"InputNumber$PartitionLikeOperations",Predictions`Prediction[
+0.5`,"combinatoric math","",{{Row[{"integer partitions of ",Pane[Style[HoldForm[5],
+LineBreakWithin -> False],ImageSize -> {150},BaselinePosition -> Baseline]}],Function[
+HoldComplete[IntegerPartitions[5]]]},{Row[{"number of integer partitions of ",Pane[
+Style[HoldForm[5],LineBreakWithin -> False],ImageSize -> {150},BaselinePosition -> Baseline]}],Function[
+HoldComplete[PartitionsP[5]]]},{Row[{"number of distinct integer partitions of ",Pane[
+Style[HoldForm[5],LineBreakWithin -> False],ImageSize -> {150},BaselinePosition -> Baseline]}],Function[
+HoldComplete[PartitionsQ[5]]]},{Row[{"permutations of ",Pane[Style[HoldForm[5],LineBreakWithin -> False],
+ImageSize -> {150},BaselinePosition -> Baseline]," objects"}],Function[HoldComplete[
+Permutations[Range[5]]]]}}],Predictions`InInput}},"otherpredictions" -> {"FullResults"},
+"allassumptions" -> {},"summarizeassumptions" -> FrontEnd`SuppressEvaluationHash[
+Automatic],"summarizepredictions" -> FrontEnd`SuppressEvaluationHash[True]]],Set[
+Typeset`update$$,FrontEnd`SuppressEvaluationHash[1]]},DynamicBox[ToBoxes[AlphaIntegration`NaturalLanguageInputBoxes[
+1,Typeset`querydata$$,Typeset`update$$],StandardForm],TrackedSymbols -> {}],RuleDelayed[
+DynamicModuleValues,{}],BaseStyle -> {Deployed -> True},ExpressionUUID -> "a829a67c-619d-45aa-915e-5063b3ea5924"]],
+"DeployedNLInput",PrivateCellOptions -> {"CellSettings" -> {"HideDetails" -> FrontEnd`SuppressEvaluationHash[
+False]}},ExpressionUUID -> "7218ccc0-2357-4994-85eb-fa6c57e5b952"],Cell[
+BoxData[
+RowBox[{"5","!"}]],"DeployedWLInput",CellAutoOverwrite -> True,GeneratedCell -> True,
+CellLabel -> "In[2]:=",PrivateCellOptions -> {"CellSettings" -> {"UsageTags" -> {{"Factorial",1}}}},
+ExpressionUUID -> "ed0210cb-b06e-4010-89ad-e1d8874c0e10"],Cell[
+BoxData[FormBox["120",
+TraditionalForm],TraditionalForm],"Output",CellLabel -> "Out[2]= ",ExpressionUUID -> "54473091-7dd3-437a-9a89-4ca6932f4069"]},
+Open],ExpressionUUID -> "fbed45fe-9d4b-417d-b7ee-8165834e6949"]},StyleDefinitions -> "WolframAlphaNotebook.nb",
+FrontEndVersion -> "14.2 for Wolfram Cloud 1.70.1 (December 30, 2024)"]
