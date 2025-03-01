@@ -1,0 +1,13 @@
+EsPrimoWL[n_] := Module[{d},
+  If[n < 2, Return[False]]; 
+  Do[
+    If[Mod[n, d] == 0, Return[False]], 
+    {d, 2, Floor[Sqrt[n]]}
+  ]; 
+  True
+]
+EsPrimoWL[7] 
+EsPrimoWL[10] 
+EsPrimoWL[2]
+EsPrimoWL[1]
+EsPrimoWL[19
