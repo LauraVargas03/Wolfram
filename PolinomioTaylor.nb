@@ -9,6 +9,3 @@ taylorAprox = PolinomioTaylorCos[x, N];
 Print["Aproximación de Cos[", x, "] con ", N, " términos: ", N[taylorAprox]];
 
 Print["Valor real de Cos[", x, "]: ", N[Cos[x]]];
-
-Aproximación de Cos[Pi/3] con 10 términos: 0.5000000000
-Valor real de Cos[Pi/3]: 0.5000000000
