@@ -1,0 +1,28 @@
+Biseccion[f_, a_, b_, tol_: 10^-6, maxIter_: 100] := Module[
+  {c, iter = 0},
+  
+  If[f[a] * f[b] >= 0, 
+    Return["El intervalo no es válido. f(a) y f(b) deben tener signos opuestos."]
+  ];
+  
+  While[(b - a) > tol && iter < maxIter,
+    c = (a + b)/2; (* Punto medio *)
+    
+    If[Abs[f[c]] < tol, Return[c]];
+    
+    If[f[a] * f[c] < 0, b = c, a = c];
+    
+    iter++;
+  ];
+  
+  Return[c]
+]
+
+f[x_] := Sin[x] - x/2; 
+
+a = 1;  
+b = 2; 
+
+raiz = Biseccion[f, a, b];
+
+Print["La raíz aproximada de la función en el intervalo [", a, ", ", b, "] es: ", N[raiz]];
