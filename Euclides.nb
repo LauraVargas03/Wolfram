@@ -1,0 +1,21 @@
+MCDRecursivo[a_, b_] := If[b == 0, a, MCDRecursivo[b, Mod[a, b]]]
+
+MCDIterativo[a_, b_] := Module[{x = a, y = b, temp},
+  While[y != 0,
+    temp = y;
+    y = Mod[x, y];
+    x = temp;
+  ];
+  x
+]
+
+
+a = 48;
+b = 18;  
+
+If[IntegerQ[a] && IntegerQ[b] && a > 0 && b > 0,
+  Print["MCD recursivo de ", a, " y ", b, " es ", MCDRecursivo[a, b]];
+  Print["MCD iterativo de ", a, " y ", b, " es ", MCDIterativo[a, b]];
+  ,
+  Print["Por favor, ingresa dos números enteros positivos."]
+]
